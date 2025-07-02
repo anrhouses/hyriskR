@@ -1,0 +1,16 @@
+Package: hyriskR
+Type: Package
+Title: Hybrid Methods for Addressing Uncertainty in RISK Assessments
+Version: 0.2.0
+Date: 2025-06-26
+Author: Jeremy Rohmer, Jean-Charles Manceau, Dominique Guyonnet, Faiza Boulahya
+Maintainer: Jeremy Rohmer <j.rohmer@brgm.fr>
+Description: Methods for addressing uncertainty in risk assessments using hybrid representations of uncertainty (probability distributions, fuzzy numbers, intervals, probability distributions with imprecise parameters). The uncertainty propagation procedure combines random sampling using Monte Carlo method with fuzzy interval analysis of Baudrit et al. (2007) <doi:10.1109/TFUZZ.2006.876720>. The sensitivity analysis is based on the pinching method of Ferson and Tucker (2006) <doi:10.1016/j.ress.2005.11.052>.
+License: GPL-3
+Depends: R (>= 3.2.0)
+Imports: datasets,utils,grDevices,graphics,stats,sets, pbapply, triangle, rgenoud, DiceDesign
+NeedsCompilation: no
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
