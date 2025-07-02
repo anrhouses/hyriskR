@@ -7,10 +7,6 @@ Uncertainty analysis is an unavoidable risk assessment task (for instance for na
 -   [Guyonnet et al., 2003](https://doi.org/10.1061/(ASCE)0733-9372(2003)129:1(68))
 -   [Baudrit et al., 2007](https://doi.org/10.1016/j.ijar.2006.07.001)
 
-## Package Website
-
-https://anrhouses.github.io/hyriskR/
-
 ## Installation
 
 This package can be installed directly by running:
@@ -18,3 +14,9 @@ This package can be installed directly by running:
 ``` r
 devtools::install_github("anrhouses/hyriskR")
 ```
+
+## Tutorial
+
+Two tutorials are available
+* on the use of probabilities and possibilities [R markdown available here](vignettes/possibility.Rmd)
+* on the use of p-boxes [R markdown available here](vignettes/pbox.Rmd)
