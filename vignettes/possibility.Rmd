@@ -131,23 +131,23 @@ The functionalities of *hyriskR* enable to summarise the p-box depending on the 
 #Interval of quantiles
 level = 0.75##quantile level
 quant = quan_interval(Z0_IRS, level)
-print(paste("Quantile inf: ", round(quant$Qlow,2)))
-print(paste("Quantile sup: ", round(quant$Qupp,2)))
+print(paste("Quantile inf: ", quant$Qlow))
+print(paste("Quantile sup: ", quant$Qupp,2))
 ```
 
 *	If the interest is a global measure of epistemic uncertainty affecting the whole probability distribution of $Z$, the *UNCERTAINTY* function computes the area within the lower and upper probability distribution.
 ```{r}
 #Global indicator of uncertainty
 unc = uncertainty(Z0_IRS)
-print(paste("Epistemic uncertainty : ", round(unc,2), sep=""))
+print(paste("Epistemic uncertainty : ", unc, sep=""))
 ```
 
 * If the interest is the probability of Z being below the decision threshold at zero, the *proba_interval* function provides the corresponding upper and lower bound on this probability.
 
 ```{r}
 #Interval of probabilities
-thres = 0.## decision threshold
+thres = 1e-6## decision threshold
 prob = proba_interval(Z0_IRS, thres)
-print(paste("Probability inf: ", round(prob$Plow,2)))
-print(paste("Probability sup: ", round(prob$Pupp,2)))
+print(paste("Probability inf: ", round(prob$Plow,3)))
+print(paste("Probability sup: ", round(prob$Pupp,3)))
 ```
