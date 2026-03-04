@@ -6,6 +6,7 @@ Uncertainty analysis is an unavoidable risk assessment task (for instance for na
 
 -   [Guyonnet et al., 2003](https://doi.org/10.1061/(ASCE)0733-9372(2003)129:1(68))
 -   [Baudrit et al., 2007](https://doi.org/10.1016/j.ijar.2006.07.001)
+-   [Rohmer et al., 2018](https://eartharxiv.org/repository/view/1236/)
 
 ## Installation
 
