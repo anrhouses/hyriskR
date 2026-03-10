@@ -21,3 +21,19 @@ devtools::install_github("anrhouses/hyriskR")
 Two tutorials are available
 * on the use of probabilities and possibilities [R markdown available here](vignettes/possibility.Rmd)
 * on the use of p-boxes [R markdown available here](vignettes/pbox.Rmd)
+
+## How to Cite
+
+If you use hyriskR in your research, please cite it as follows:
+
+```bibtex
+@software{hyriskR,
+  author       = {Jeremy Rohmer, Jean-Charles Manceau, Dominique Guyonnet, Faiza Boulahya},
+  title        = {hybrid uncertainty quantification in risk assessments},
+  year         = {2026},
+  url          = {https://github.com/anrhouses/hyriskR},
+  note         = {Version x.y},
+}
+```
+
+*Please update the version number as appropriate.*
