@@ -33,7 +33,7 @@ If you use hyriskR in your research, please cite it as follows:
   title        = {hybrid uncertainty quantification in risk assessments},
   year         = {2026},
   url          = {https://github.com/anrhouses/hyriskR},
-  note         = {Version x.y},
+  note         = {Version 0.2},
 }
 ```
 
