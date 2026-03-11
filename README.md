@@ -23,6 +23,26 @@ Two tutorials are available
 * on the use of probabilities and possibilities [R markdown available here](vignettes/possibility.Rmd)
 * on the use of p-boxes [R markdown available here](vignettes/pbox.Rmd)
 
+## Applications of the package
+
+This package has been used in several peer-reviewed publications:
+
+> Le Cozannet, G., Manceau, J. C., & Rohmer, J. (2017). 
+> Bounding sea level projections within the framework of the possibility theory
+> Environ. Res. Lett. 12(1), 014012.
+
+> Rohmer, J., Le Cozannet, G., & Manceau, J. C. (2019).
+> Addressing ambiguity in probabilistic assessments of future coastal
+> flooding using possibility distributions. Climatic Change, 155(1), 95-109.
+
+> Piton, G., Goodwin, S. R., Mark, E., & Strouth, A. (2022).
+> Debris flows, boulders and constrictions: a simple framework for modeling jamming, and its consequences on outflow.
+> Journal of Geophysical Research: Earth Surface, 127(5), e2021JF006447.
+
+> Thiéblemont, R., Le Cozannet, G., Rohmer, J., Toimil, A., Álvarez-Cuesta, M., & Losada, I. J. (2021).
+> Deep uncertainties in shoreline change projections: an extra-probabilistic approach applied to sandy beaches.
+> Natural Hazards and Earth System Sciences, 21(7), 2257-2276.
+
 ## How to Cite
 
 If you use hyriskR in your research, please cite it as follows:
