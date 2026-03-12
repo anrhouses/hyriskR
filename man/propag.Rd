@@ -5,7 +5,7 @@
 Function for conducting joint propagation of probability, imprecise probability and possibilisty distributions (or intervals) using IRS (Baudrit et al., 2006) or hybrid method (Guyonnet et al., 2003).
 }
 \usage{
-PROPAG(N, input, FUN, choice_opt="L-BFGS-B", param_opt = NULL, 
+propag(N, input, FUN, choice_opt="L-BFGS-B", param_opt = NULL, 
        mode = "IRS", corr = 0.01, NL = 10)
 }
 \arguments{
@@ -87,7 +87,7 @@ PROPAG(N, input, FUN, choice_opt="L-BFGS-B", param_opt = NULL,
 #################################################
 
 #### Model function
-FUN<-function(X){
+FUN = function(X){
 	UER = X[1]
 	EF = X[2]
 	I = X[3]
@@ -96,8 +96,8 @@ FUN<-function(X){
 	return(UER*I*C*EF*ED/(70*70*365))
 }
 
-ninput <- 5 #Number of input parameters
-input <- vector(mode = "list", length = ninput) # Initialisation
+ninput = 5 #Number of input parameters
+input = vector(mode = "list", length = ninput) # Initialisation
 
 input[[1]] = create_input(
 		name = "UER",
@@ -147,8 +147,8 @@ choice_opt = NULL #no optimization needed
 param_opt = NULL
 
 #PROPAGATION RUN
-Z0_IRS = PROPAG(N = 1000, input, FUN, choice_opt, param_opt, mode = "IRS")
-Z0_HYBRID = PROPAG(N = 250,input, FUN, choice_opt, param_opt, mode = "HYBRID")
+Z0_IRS = propag(N = 1000, input, FUN, choice_opt, param_opt, mode = "IRS")
+Z0_HYBRID = propag(N = 250,input, FUN, choice_opt, param_opt, mode = "HYBRID")
 
 #################################################
 #### POST-PROCESSING
@@ -163,7 +163,7 @@ plot_cdf(Z0_HYBRID, new = FALSE, color1 = 3, color2 = 4, lwd = 1.5)
 #################################################
 
 #### Model function
-FUN<-function(X){
+FUN = function(X){
 	A = X[1]
 	B = X[2]
 	return(100*(B-A^2)^2+(1-A)^2)
