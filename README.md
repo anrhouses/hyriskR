@@ -19,9 +19,10 @@ devtools::install_github("anrhouses/hyriskR")
 
 ## Tutorial
 
-Two tutorials are available
-* on the use of probabilities and possibilities [R markdown available here](vignettes/possibility.Rmd)
-* on the use of p-boxes [R markdown available here](vignettes/pbox.Rmd)
+Two tutorials are available:
+* Use of probabilities and possibilities [R markdown available here](vignettes/possibility.Rmd)
+* Use of p-boxes [R markdown available here](vignettes/pbox.Rmd)
+* Step-by-step application to a real case for coastal dyke failure assessment [R markdown available here](vignettes/hyrisk_demo.Rmd)
 
 ## Applications of the package
 
