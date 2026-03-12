@@ -7,7 +7,7 @@ Interval of probability of exceedance.
 Function for summarizing the uncertainty propagation's results in the form of an interval of probability of exceedance for a given threshold.
 }
 \usage{
-PROBA_INTERVAL(Z0, threshold)
+proba_interval(Z0, threshold)
 }
 \arguments{
   \item{Z0}{
