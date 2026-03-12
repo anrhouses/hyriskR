@@ -7,7 +7,7 @@ output:
 bibliography: refs.bib
 ---
 
-This is an R Markdown Notebook to help you through the R package [HYRISK](https://cran.r-project.org/web/packages/HYRISK/index.html).
+This is an R Markdown Notebook to help you through the R package [hyriskR](https://github.com/anrhouses/hyriskR).
 
 ```{r}
 library(hyriskR)
@@ -223,5 +223,6 @@ print(paste("Proba-based sensitivity measure: ",round(sensi.proba,2),sep=""))
 sensi.global = sensi_pinching(Z0_IRS, Z0p, mode="global", disc=0.01)
 print(paste("global sensitivity measure: ",round(sensi.global,2),sep=""))
 ```
+
 
 
