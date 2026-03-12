@@ -49,12 +49,12 @@ This package has been used in several peer-reviewed publications:
 If you use hyriskR in your research, please cite it as follows:
 
 ```bibtex
-@software{hyriskR,
-  author       = {Jeremy Rohmer, Jean-Charles Manceau, Dominique Guyonnet, Faiza Boulahya},
-  title        = {hybrid uncertainty quantification in risk assessments},
-  year         = {2026},
-  url          = {https://github.com/anrhouses/hyriskR},
-  note         = {Version 0.2},
+@article{rohmer2018hyrisk,
+  title={HYRISK: An R package for hybrid uncertainty analysis using probability, imprecise probability and    possibility distributions},
+  author={Rohmer, Jeremy and Manceau, Jean-Charles and Guyonnet, Dominique and Boulahya, Faiza and Dubois, Didier},
+  year={2018},
+  publisher={EarthArXiv}
+  doi={https://doi.org/10.31223/osf.io/j67cy}
 }
 ```
 
