@@ -7,7 +7,7 @@ Function for summarizing the uncertainty propagation's results in the form of a 
 Function for summarizing the uncertainty propagation's results in the form of a unique CDF via the weighting average approach of Dubois and Guyonnet (2011).
 }
 \usage{
-SUMMARY_1CDF(Z0, aversion = 0.5)
+summary_1cdf(Z0, aversion = 0.5)
 }
 \arguments{
   \item{Z0}{
@@ -42,7 +42,7 @@ Dubois D., Guyonnet D. 2011. Risk-informed decision-making under epistemic uncer
 #################################################
 
 #### Model function
-FUN<-function(X){
+FUN = function(X){
 UER=X[1]
 EF=X[2]
 I=X[3]
@@ -51,37 +51,37 @@ ED=X[5]
 return(UER*I*C*EF*ED/(70*70*365))
 }
 
-ninput<-5 #Number of input parameters
-input<-vector(mode="list", length=ninput) # Initialisation
+ninput = 5 #Number of input parameters
+input = vector(mode="list", length=ninput) # Initialisation
 
-input[[1]]=CREATE_INPUT(
+input[[1]] = create_input(
 		name="UER",
 		type="possi",
 		distr="triangle",
 		param=c(2.e-2, 5.7e-2, 1.e-1),
 		monoton="incr"
 		)
-input[[2]]=CREATE_INPUT(
+input[[2]] = create_input(
 		name="EF",
 		type="possi",
 		distr="triangle",
 		param=c(200,250,350),
 		monoton="incr"
 		)
-input[[3]]=CREATE_INPUT(
+input[[3]] = create_input(
 		name="I",
 		type="possi",
 		distr="triangle",
 		param=c(1,1.5,2.5),
 		monoton="incr"
 		)
-input[[4]]=CREATE_INPUT(
+input[[4]] = create_input(
 		name="C",
 		type="proba",
 		distr="triangle",
 		param=c(5e-3,20e-3,10e-3)
 		)
-input[[5]]=CREATE_INPUT(
+input[[5]] = create_input(
 		name="ED",
 		type="proba",
 		distr="triangle",
@@ -89,29 +89,29 @@ input[[5]]=CREATE_INPUT(
 		)
 
 ####CREATION OF THE DISTRIBUTIONS ASSOCIATED TO THE PARAMETERS
-input=CREATE_DISTR(input)
+input = create_distr(input)
 
 ####VISU INPUT
-PLOT_INPUT(input)
+plot_input(input)
 
 #################################################
 #### PROPAGATION
 
 #OPTIMZATION CHOICES
-choice_opt=NULL #no optimization needed
-param_opt=NULL
+choice_opt = NULL #no optimization needed
+param_opt = NULL
 
 #PROPAGATION RUN
-Z0_IRS<-PROPAG(N=1000,input,FUN,choice_opt,param_opt,mode="IRS")
+Z0_IRS = propag(N=1000, input, FUN, choice_opt, param_opt, mode="IRS")
 
 #################################################
 #### POST-PROCESSING
 
 # VISU - PROPAGATION
-PLOT_CDF(Z0_IRS,xlab="Z",ylab="CDF",main="EX 1",lwd=1.5)
+plot_cdf(Z0_IRS, xlab="Z", ylab="CDF", main="EX 1", lwd=1.5)
 
 # One CDF with risk aversion of 1/3
-Z<-SUMMARY_1CDF(Z0_IRS,aversion=1/3)
+Z = summary_1cdf(Z0_IRS, aversion=1/3)
 lines(ecdf(Z),col=5,lwd=1.5)
 
 }
