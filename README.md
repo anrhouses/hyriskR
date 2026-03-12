@@ -57,8 +57,12 @@ If you use hyriskR in your research, please cite it as follows:
 }
 ```
 
-*Please update the version number as appropriate.*
-
 ## License
 
 `hyriskR` is free software released under the GNU General Public License v3.0.
+
+## Acknowledgements
+
+New developments were supported by the French National Research Agency within the HOUSES project (ANR-22-CE56-
+0006).
+
