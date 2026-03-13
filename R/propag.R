@@ -5,7 +5,7 @@ propag <-
 		if (sampler == "lhs"){
 			rr = lhsDesign(N,d)$design*(1-corr)
 		}else{
-			rr = matrix(runif(N*d),ncol=d)*(1-corr)
+			rr = matrix(runif(N*d,0,1-corr),ncol=d)
 		}
 		Z0 = apply(rr, 1, propag_fun, N, input, FUN, choice_opt, param_opt)
 	}
