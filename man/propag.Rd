@@ -10,7 +10,7 @@ propag(N, input, FUN, choice_opt="L-BFGS-B", param_opt = NULL,
 }
 \arguments{
   \item{N}{
-	Integer corresponding to the number of random samples.
+	Integer corresponding to the number of random samples. Depending on the type of \emph{sampler} used, this number shoudl be on the order of several hundreds.
 }
   \item{input}{
 	List of inputs as provided by the function \emph{CREATE_INPUT()}.
