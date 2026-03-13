@@ -6,7 +6,9 @@
 
 * add vignettes with application cases of Dubois and Guyonnet (2011) and that of Schoebi and Sudret (2016)
 
-* new features: define possibility distribution from confidence interval or mean and standard deviation
+* new features:
+  * define possibility distribution from confidence interval or mean and standard deviation
+  * improve speed of convergence of propag() via low-discrepancy random sequences 
 
 # `hyriskR` 0.1.0
 
