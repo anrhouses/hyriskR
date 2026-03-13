@@ -48,7 +48,7 @@ propag(N, input, FUN, choice_opt="L-BFGS-B", param_opt = NULL,
 	Integer to specify the number of alpha-cuts needed for hybrid propagation described by Baudrit et al. (2006). By default, \emph{NL}=10.
 }
   \item{sampler}{
-	Type of random sampler used. Tow options are available either Latin Hypercube Design (lhs) developed by  or original sampler or R.  By default, \emph{sampler}="lhs".
+	Type of random sampler used. Three options are available either Latin Hypercube Design (lhs) developed by MacKay et al. (1979), or Space-Filling Designs based on Strauss process (strauss) as investigated by Franco et al. (2008), or original sampler or R (base).  By default, \emph{sampler}="lhs".
 }
 }
 
@@ -70,6 +70,7 @@ propag(N, input, FUN, choice_opt="L-BFGS-B", param_opt = NULL,
 	\itemize{
 		\item Baudrit, C., Dubois, D., & Guyonnet, D. 2006. Joint propagation and exploitation of probabilistic and possibilistic information in risk assessment. IEEE transactions on fuzzy systems, 14(5), 593-608.
 		\item Baudrit, C., Guyonnet, D., Dubois, D. 2007. Joint propagation of variability and partial ignorance in a groundwater risk assessment. Journal of Contaminant Hydrology, 93: 72-84.
+		\item Franco, F.,  Bay, X.,  Corre, B.,  Dupuy, D. 2008. Planification d'experiences numeriques a partir du processus ponctuel de Strauss, https://hal.science/hal-00260701/fr/.
 		\item Mebane, W., Jr. and  Sekhon, J. S. 2011. Genetic Optimization Using Derivatives: The rgenoud package for R. Journal of Statistical Software, 42(11): 1-26. 
 		\item McKay M., Conover W. and Beckman R. 1979. A comparison of three methods for selecting values of input variables in the analysis of output from a computer code, Technometrics, 21, 2, 239-245.
 		\item Pedroni, N., Zio, E., Ferrario, E., Pasanisi, A., & Couplet, M. 2013. Hierarchical propagation of probabilistic and non-probabilistic uncertainty in the parameters of a risk model. Computers & Structures, 126, 199-213.
