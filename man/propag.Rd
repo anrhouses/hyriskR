@@ -6,7 +6,7 @@ Function for conducting joint propagation of probability, imprecise probability 
 }
 \usage{
 propag(N, input, FUN, choice_opt="L-BFGS-B", param_opt = NULL, 
-       mode = "IRS", corr = 0.01, NL = 10)
+       mode = "IRS", corr = 0.01, NL = 10, sampler = "lhs")
 }
 \arguments{
   \item{N}{
@@ -47,6 +47,9 @@ propag(N, input, FUN, choice_opt="L-BFGS-B", param_opt = NULL,
   \item{NL}{
 	Integer to specify the number of alpha-cuts needed for hybrid propagation described by Baudrit et al. (2006). By default, \emph{NL}=10.
 }
+  \item{sampler}{
+	Type of random sampler used. Tow options are available either Latin Hypercube Design (lhs) developed by  or original sampler or R.  By default, \emph{sampler}="lhs".
+}
 }
 
 \details{
@@ -55,8 +58,7 @@ propag(N, input, FUN, choice_opt="L-BFGS-B", param_opt = NULL,
 		\url{https://hal-brgm.archives-ouvertes.fr/file/index/docid/578821/filename/Uncertainties_RA_09_l_dg.pdf}
 	\item Details on the representation via imprecise probability distributions in Pedroni et al. (2013).
 	\item Details on example 2 in Sch\"obi & Sudret (2016), available at:
-		\url{https://arxiv.org/pdf/1608.05565.pdf}
-		
+		\url{https://arxiv.org/pdf/1608.05565.pdf}		
 }
 }
 
@@ -69,6 +71,7 @@ propag(N, input, FUN, choice_opt="L-BFGS-B", param_opt = NULL,
 		\item Baudrit, C., Dubois, D., & Guyonnet, D. 2006. Joint propagation and exploitation of probabilistic and possibilistic information in risk assessment. IEEE transactions on fuzzy systems, 14(5), 593-608.
 		\item Baudrit, C., Guyonnet, D., Dubois, D. 2007. Joint propagation of variability and partial ignorance in a groundwater risk assessment. Journal of Contaminant Hydrology, 93: 72-84.
 		\item Mebane, W., Jr. and  Sekhon, J. S. 2011. Genetic Optimization Using Derivatives: The rgenoud package for R. Journal of Statistical Software, 42(11): 1-26. 
+		\item McKay M., Conover W. and Beckman R. 1979. A comparison of three methods for selecting values of input variables in the analysis of output from a computer code, Technometrics, 21, 2, 239-245.
 		\item Pedroni, N., Zio, E., Ferrario, E., Pasanisi, A., & Couplet, M. 2013. Hierarchical propagation of probabilistic and non-probabilistic uncertainty in the parameters of a risk model. Computers & Structures, 126, 199-213.
 		\item Sch\"obi, R., Sudret, B. 2016. Uncertainty propagation of p-boxes using sparse polynomial chaos expansions, https://arxiv.org/pdf/1608.05565.pdf
 }
