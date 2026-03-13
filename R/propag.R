@@ -4,7 +4,9 @@ propag <-
 		d = length(input)
 		if (sampler == "lhs"){
 			rr = lhsDesign(N,d)$design*(1-corr)
-		}else{
+		}else if(sampler == "strauss"){
+			rr = straussDesign(n=N, dimension=d, RND=0.2, NMC=200,constraints1D=0, alpha=0, repulsion=0.01)$design*(1-corr)
+		}else if(sampler == "base"){
 			rr = matrix(runif(N*d,0,1-corr),ncol=d)
 		}
 		Z0 = apply(rr, 1, propag_fun, N, input, FUN, choice_opt, param_opt)
