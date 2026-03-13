@@ -1,8 +1,12 @@
 propag <-
-	function(N, input, FUN, choice_opt = "L-BFGS-B", param_opt = NULL, mode = "IRS", corr = 1.e-2, NL = 10){
+	function(N, input, FUN, choice_opt = "L-BFGS-B", param_opt = NULL, mode = "IRS", corr = 1.e-2, NL = 10, sampler = "lhs"){
 	if (mode == "IRS"){
 		d = length(input)
-		rr = lhsDesign(N,d)$design*(1-corr)
+		if (sampler == "lhs"){
+			rr = lhsDesign(N,d)$design*(1-corr)
+		}else{
+			rr = matrix(runif(N*d),ncol=d)*(1-corr)
+		}
 		Z0 = apply(rr, 1, propag_fun, N, input, FUN, choice_opt, param_opt)
 	}
 	if (mode == "HYBRID"){
