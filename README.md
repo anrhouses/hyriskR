@@ -40,13 +40,21 @@ This package has been used in several peer-reviewed publications:
 > Addressing ambiguity in probabilistic assessments of future coastal
 > flooding using possibility distributions. Climatic Change, 155(1), 95-109.
 
-> Piton, G., Goodwin, S. R., Mark, E., & Strouth, A. (2022).
-> Debris flows, boulders and constrictions: a simple framework for modeling jamming, and its consequences on outflow.
-> Journal of Geophysical Research: Earth Surface, 127(5), e2021JF006447.
+> Horita K, Recking A, Piton G, Vazquez-Tarrio D, Pitlick J, Sprouse G. (2020).
+> Uncertainty propagation analysis of bedload transport estimates with consideration of how to appropriately quantify the natural variability of flow and grain size parameters in gravel bed rivers.
+> AGU Fall 2020. EP015-08 pp. 1 December [online] Available at: https://hal.science/hal-03006056 
 
 > Thiéblemont, R., Le Cozannet, G., Rohmer, J., Toimil, A., Álvarez-Cuesta, M., & Losada, I. J. (2021).
 > Deep uncertainties in shoreline change projections: an extra-probabilistic approach applied to sandy beaches.
 > Natural Hazards and Earth System Sciences, 21(7), 2257-2276.
+
+> Piton, G., Goodwin, S. R., Mark, E., & Strouth, A. (2022).
+> Debris flows, boulders and constrictions: a simple framework for modeling jamming, and its consequences on outflow.
+> Journal of Geophysical Research: Earth Surface, 127(5), e2021JF006447.
+
+> Shirra H. (2024).
+> Modeling Jamming Caused by Debris Flows Through a Series of Cascading Structures,
+> Msc Thesis, Univ. Grenobles Alpes, Grenobe-INP, ENSE3: Grenoble, France [online] Available at: https://hal.inrae.fr/hal-04670924v1
 
 ## How to Cite
 
