@@ -56,6 +56,10 @@ This package has been used in several peer-reviewed publications:
 > Modeling Jamming Caused by Debris Flows Through a Series of Cascading Structures,
 > Msc Thesis, Univ. Grenobles Alpes, Grenobe-INP, ENSE3: Grenoble, France [online] Available at: https://hal.inrae.fr/hal-04670924v1
 
+> Belbèze, S., Rohmer, J., Guyonnet, D., Négrel, P., & Tarvainen, T. (2025).
+> Improving spatial interpolation for anomaly analysis in presence of sparse, clustered or imprecise data sets.
+> Journal of Geochemical Exploration, 107868.
+
 ## How to Cite
 
 If you use hyriskR in your research, please cite it as follows:
