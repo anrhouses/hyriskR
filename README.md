@@ -6,6 +6,8 @@ Uncertainty analysis is an unavoidable risk assessment task (for instance for na
 
 We present here an R package `hyriskR` for hybrid uncertainty quantification in environmental risk assessments. It is dedicated to jointly handling different mathematical representation tools, namely probabilities, possibility distributions and probability functions with imprecise parameters, for the different stages of uncertainty treatment in risk assessments (i.e,. uncertainty representation, propagation, sensitivity analysis and decision-making).
 
+Check full details at [hyriskR website](https://anrhouses.github.io/hyriskR).
+
 ## Scientific documentation of the methods
 
 -   [Guyonnet et al., 2003](https://doi.org/10.1061/(ASCE)0733-9372(2003)129:1(68))
