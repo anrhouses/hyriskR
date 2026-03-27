@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="inst/figures/logo.png" height="300"/>
+  <img src="inst/figures/hyriskR.png" height="300"/>
 </p>
 
 Uncertainty analysis is an unavoidable risk assessment task (for instance for natural hazards, or for environmental issues). In situations where data are scarce, incomplete or imprecise, the systematic and only use of probabilities can be debatable. Several alternative mathematical representation methods have been developed to handle in a more flexible manner the lack of knowledge related to input parameters of risk assessment models. 
