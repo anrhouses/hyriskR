@@ -1,19 +1,14 @@
+**Uncertainty analysis** is an unavoidable risk assessment task (for instance for natural hazards, or for environmental issues). In situations where data are scarce, incomplete or imprecise, the systematic and only use of probabilities can be debatable. Several alternative mathematical representation methods have been developed to handle in a more flexible manner the lack of knowledge related to input parameters of risk assessment models. 
+
+We present here an R package `hyriskR` for hybrid uncertainty quantification in environmental risk assessments. It is dedicated to jointly handling different mathematical representation tools, namely probabilities, possibility distributions and probability functions with imprecise parameters, for the different stages of uncertainty treatment in risk assessments (i.e,. uncertainty representation, propagation, sensitivity analysis and decision-making).
+
+## Summary of the functionnalities
+
 <p align="center">
   <img src="inst/figures/hyriskR.png" height="300"/>
 </p>
 
-Uncertainty analysis is an unavoidable risk assessment task (for instance for natural hazards, or for environmental issues). In situations where data are scarce, incomplete or imprecise, the systematic and only use of probabilities can be debatable. Several alternative mathematical representation methods have been developed to handle in a more flexible manner the lack of knowledge related to input parameters of risk assessment models. 
-
-We present here an R package `hyriskR` for hybrid uncertainty quantification in environmental risk assessments. It is dedicated to jointly handling different mathematical representation tools, namely probabilities, possibility distributions and probability functions with imprecise parameters, for the different stages of uncertainty treatment in risk assessments (i.e,. uncertainty representation, propagation, sensitivity analysis and decision-making).
-
 Check full details at [hyriskR website](https://anrhouses.github.io/hyriskR).
-
-## Scientific documentation of the methods
-
--   [Guyonnet et al., 2003](https://doi.org/10.1061/(ASCE)0733-9372(2003)129:1(68))
--   [Baudrit et al., 2007](https://doi.org/10.1016/j.ijar.2006.07.001)
--   [Rohmer et al., 2018](https://eartharxiv.org/repository/view/1236/)
--   A full video tutorial is also available on the EGU platform [here](https://meetingorganizer.copernicus.org/EGU21/session/38918) (*you will need to have a Copernicus account*)
 
 ## Installation
 
@@ -29,6 +24,13 @@ Different tutorials are available:
 * Use of probabilities and possibilities [R markdown available here](vignettes/possibility.Rmd)
 * Use of p-boxes [R markdown available here](vignettes/pbox.Rmd)
 * Step-by-step application to a real case for coastal dyke failure assessment [R markdown available here](vignettes/hyrisk_demo.Rmd)
+
+## Scientific documentation of the methods
+
+-   [Guyonnet et al., 2003](https://doi.org/10.1061/(ASCE)0733-9372(2003)129:1(68))
+-   [Baudrit et al., 2007](https://doi.org/10.1016/j.ijar.2006.07.001)
+-   [Rohmer et al., 2018](https://eartharxiv.org/repository/view/1236/)
+-   A full video tutorial is also available on the EGU platform [here](https://meetingorganizer.copernicus.org/EGU21/session/38918) (*you will need to have a Copernicus account*)
 
 ## Applications of the package
 
