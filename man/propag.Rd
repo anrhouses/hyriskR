@@ -6,7 +6,7 @@ Function for conducting joint propagation of probability, imprecise probability 
 }
 \usage{
 propag(N, input, FUN, choice_opt="L-BFGS-B", param_opt = NULL, 
-       mode = "IRS", corr = 0.01, NL = 10, sampler = "lhs")
+       mode = "IRS", corr = 0.01, NL = 10, sampler = "lhs", return.rr = FALSE)
 }
 \arguments{
   \item{N}{
@@ -50,6 +50,9 @@ propag(N, input, FUN, choice_opt="L-BFGS-B", param_opt = NULL,
   \item{sampler}{
 	Type of random sampler used. Three options are available either Latin Hypercube Design (lhs) developed by MacKay et al. (1979), or Space-Filling Designs based on Strauss process (strauss) as investigated by Franco et al. (2008), or original sampler or R (base).  By default, \emph{sampler}="lhs".
 }
+  \item{return.r}{
+	Logical to return the random values generated to sample the inputs. For advanced users. 
+}
 }
 
 \details{
@@ -65,6 +68,7 @@ propag(N, input, FUN, choice_opt="L-BFGS-B", param_opt = NULL,
 \value{
 	Matrix Z0 of 2 rows and \emph{N} columns (for IRS mode) or \emph{N}x\emph{NL} (for HYBRID mode). 
 	This corresponds to the set of random intervals (row Number 1: lower bound; row Number 2: upper bound), which can be summarized in different forms, see Baudrit et al. (2006).
+    If \emph{return.r == TRUE} the output is a list of two elements: Z corresponding to the matrix defined above, and the random values \emph{r} used to sample the inputs.
 }
 \references{
 	\itemize{
