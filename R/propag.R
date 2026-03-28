@@ -1,5 +1,5 @@
 propag <-
-	function(N, input, FUN, choice_opt = "L-BFGS-B", param_opt = NULL, mode = "IRS", corr = 1.e-2, NL = 10, sampler = "lhs"){
+	function(N, input, FUN, choice_opt = "L-BFGS-B", param_opt = NULL, mode = "IRS", corr = 1.e-2, NL = 10, sampler = "lhs",return.r = FALSE){
 	if (mode == "IRS"){
 		d = length(input)
 		if (sampler == "lhs"){
@@ -29,5 +29,9 @@ propag <-
 		}
 		Z0 = apply(rr, 1, propag_fun, N, input, FUN, choice_opt, param_opt)
 	}
-	return(Z0)
+	if(return.r == FALSE){
+		return(Z0)
+	}else{
+		return(list(Z=Z0,r=rr))
+	}	
 }
