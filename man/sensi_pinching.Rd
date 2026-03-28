@@ -89,7 +89,7 @@ input[[3]] = create_input(
 		param = c(1,1.5,2.5),
 		monoton = "incr"
 		)
-input[[4]]=CREATE_INPUT(
+input[[4]] = create_input(
 		name = "C",
 		type = "proba",
 		distr = "triangle",
@@ -116,14 +116,14 @@ choice_opt=NULL #no optimization needed
 param_opt=NULL
 
 #PROPAGATION RUN
-Z0_IRS = propag(N = 1000, input, FUN, choice_opt, param_opt, mode = "IRS")
+Z0_IRS = propag(N = 250, input, FUN, choice_opt, param_opt, mode = "IRS")
 
 #################################################
 #### PINCHING
 Z0p = pinching_fun(
 	which=1,##first input variable
 	value = 5.7e-2, ##pinched at the scalar value of 5.7e-2
-	N = 1000,
+	N = 250,
 	input,
 	FUN,
 	choice_opt,
@@ -134,6 +134,9 @@ Z0p = pinching_fun(
 # VISU - PROPAGATION
 plot_cdf(Z0_IRS, xlab = "Z", ylab = "CDF", main = "EX PINCHING", lwd=1.5)
 plot_cdf(Z0p, color1 = 3, color2 = 4, new = FALSE, lwd = 1.5)
+
+# sensitivity measure
+sensi.global = sensi_pinching(Z0_IRS, Z0p)
 print(paste("global sensitivity measure: ",sensi.global,sep=""))
 
 }
