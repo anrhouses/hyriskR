@@ -5,7 +5,7 @@ We present here an R package `hyriskR` for hybrid uncertainty quantification in 
 ## Summary of the functionnalities
 
 <p align="center">
-  <img src="inst/figures/hyriskR.png" height="300"/>
+  <img src="vignettes/hyriskR.png" height="300"/>
 </p>
 
 Check full details at [hyriskR website](https://anrhouses.github.io/hyriskR).
