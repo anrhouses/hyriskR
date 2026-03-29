@@ -1,4 +1,5 @@
 url: https://anrhouses.github.io/hyriskR/
 template:
   bootstrap: 5
-
+  bootswatch: cerulean
+  
