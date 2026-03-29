@@ -8,7 +8,9 @@
 
 * new features:
   * define possibility distribution from confidence interval or mean and standard deviation
-  * improve speed of convergence of propag() via low-discrepancy random sequences 
+  * improve speed of convergence of propag() via low-discrepancy random sequences
+  * add surrogate-based propagation
+  * add regional sensitivity analysis
 
 # `hyriskR` 0.1.0
 
