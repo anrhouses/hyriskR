@@ -15,14 +15,15 @@ This package provides tools for uncertainty analysis:
     \item Create input uncertain variables represented by an interval, a possibility distribution (trapezoidal or triangular), a probability distribution (normal, lognormal, beta, triangle, Gumbel or user-defined), or an imprecise probability distribution.
     \item Perform joint uncertainty propagation using IRS of Baudrit et al. (2007) or Hybrid algorithm described by Baudrit et al. (2006).
     \item Perform uncertainty propagation when the random variables are represented by imprecise probabilities, i.e. probability distribution with ill-known parameters (Pedroni et al., 2013).
+	\item Improve the speed of uncertainty propagation via low discrepancy random sequences or surrogate-based methods (Lockwood et al., 2012).
     \item Summarize the uncertan results in the form of a pair of lower and upper cumulative distribution functions CDFs. 
     \item Summarize the uncertainty in the form of an interval of exceedance probabilities, an interval of quantiles, or a global indicator corresponding to the area between the lower and upper CDFs.
-    \item Perform sensitivity analysis using a pinching approach (Ferson and Tucker, 2006).
+    \item Perform sensitivity analysis using a pinching approach (Ferson and Tucker, 2006) or regional approach (Rohmer and Verdel, 2014). 
 }
 
 }
 \author{
-Author: Jeremy Rohmer, Jean-Charles Manceau, Faiza Boulahya
+Author: Jeremy Rohmer, Jean-Charles Manceau, Dominique Guyonnet, Faiza Boulahya
 Maintainer: Jeremy Rohmer <j.rohmer@brgm.fr>
 }
 
@@ -31,7 +32,9 @@ Maintainer: Jeremy Rohmer <j.rohmer@brgm.fr>
 		\item Baudrit, C., Dubois, D., & Guyonnet, D. 2006. Joint propagation and exploitation of probabilistic and possibilistic information in risk assessment. IEEE transactions on fuzzy systems, 14(5), 593-608.
 		\item Baudrit, C., Guyonnet, D., Dubois, D. 2007. Joint propagation of variability and partial ignorance in a groundwater risk assessment. Journal of Contaminant Hydrology, 93: 72-84.
 		\item Ferson, S., & Tucker, W. T. (2006). Sensitivity analysis using probability bounding. Reliability Engineering & System Safety, 91(10), 1435-1442.
+		\item Lockwood, B., Anitescu, M., & Mavriplis, D. (2012). Mixed aleatory/epistemic uncertainty quantification for hypersonic flows via gradient-based optimization and surrogate models. In 50th AIAA Aerospace Sciences Meeting Including the New Horizons Forum and Aerospace Exposition (p. 1254).
 		\item Pedroni, N., Zio, E., Ferrario, E., Pasanisi, A., & Couplet, M. 2013. Hierarchical propagation of probabilistic and non-probabilistic uncertainty in the parameters of a risk model. Computers & Structures, 126, 199-213.
+		\item Rohmer, J., & Verdel, T. (2014). Joint exploration of regional importance of possibilistic and probabilistic uncertainty in stability analysis. Computers and Geotechnics, 61, 308-315.
 }
 }
 
